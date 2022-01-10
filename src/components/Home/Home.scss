@@ -1,0 +1,41 @@
+.MuiTableContainer-root {
+  background-color: azure;
+}
+
+.button {
+  display: flex;
+  justify-content: right;
+  padding: 32px 0 32px;
+
+  button {
+    background-color: aliceblue;
+    color: cadetblue;
+  }
+  
+  span {
+    font-size: 14px;
+  }
+
+  .MuiButton-contained.Mui-disabled {
+    background-color: darkgray;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .page .MuiPaper-root {
+    width: 100%;
+  }
+
+  .MuiToolbar-root.MuiToolbar-regular {
+    min-height: 42px;
+  }
+
+  .MuiTypography-root.MuiTypography-h5 {
+    font-size: 12px;
+  }
+
+  .button span {
+    font-size: 12px;
+  }
+
+}

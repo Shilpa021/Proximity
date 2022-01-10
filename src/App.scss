@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+}
+
+.page {
+  padding: 84px;
+  font-family: circular, sans-serif;
+  background-color: powderblue;
+  background: url("https://images.unsplash.com/photo-1606994868513-d480e1a1cab0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+  header {
+    margin: 0 auto;
+    position: static;
+    background-color: teal;
+    color: aliceblue;
+  }
+}
+
+.MuiToolbar-regular {
+  justify-content: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .page {
+    padding: 48px;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

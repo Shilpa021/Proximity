@@ -1,0 +1,75 @@
+.MuiTableContainer-root {
+  td,
+  th {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  th {
+    font-size: 18px;
+    font-weight: bold;
+    color: dimgray;
+  }
+
+  td:hover {
+    cursor: pointer;
+  }
+
+  thead tr {
+    background-color: whitesmoke;
+
+    &:hover {
+      background-color: silver;
+    }
+  }
+
+  thead tr th,
+  tbody tr td {
+    font-size: 14px;
+    line-height: 0.6;
+  }
+}
+
+.MuiTableRow-root.Aqi--Good td {
+  color: Green;
+}
+
+.MuiTableRow-root.Aqi {
+  &--Satisfactory td {
+    color: rgb(102, 241, 102);
+  }
+  &--Moderate td {
+    color: rgb(248, 237, 81);
+  }
+  &--Poor td {
+    color: rgb(247, 186, 54);
+  }
+  &--VeryPoor td {
+    color: rgb(190, 75, 46);
+  }
+  &--Severe td {
+    color: rgb(245, 71, 71);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .MuiTable-root.makeStyles-table-1306 {
+    max-width: 300px;
+    background-color: yellow;
+  }
+
+  .MuiTableContainer-root {
+    thead tr th,
+    tbody tr td {
+      font-size: 12px;
+    }
+
+    tbody tr td {
+      padding: 0;
+      width: 25%;
+
+      &:nth-child(1) {
+        width: 1%;
+      }
+    }
+  }
+}
