@@ -35,7 +35,7 @@ const ComparisonModal = (props) => {
     });
 
     setSelectedRowsData(selectedRowsItems);
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const getRandomColor = (index) => {
     const color = [
@@ -88,7 +88,7 @@ const ComparisonModal = (props) => {
               ))}
             </LineChart>
           </ResponsiveContainer>
-          
+
         </div>
       </Modal>
     </div>

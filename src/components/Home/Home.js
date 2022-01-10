@@ -87,7 +87,7 @@ const Home = (props) => {
     });
 
     setCityData(tempAqiData);
-  }, [aqiData]);
+  }, [aqiData]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <Box>
